@@ -1,0 +1,51 @@
+.container{
+margin: 40px;
+background: #56836F;
+height: 1396px;}
+.navli {
+	display: inline-block;
+	margin-right: 55px;
+	font-family: MyriadPro-Regular;
+	font-size: 48px;
+	color: #FFFFFF;
+	text-align: left;
+}
+nav{
+	display: inline-block;
+}
+.icon{
+  display: inline-block;
+  vertical-align: top;
+  margin:49px 55px 83px 1fr;
+  width: 203px;
+  height: 152px;
+}
+.block1::after {
+    content: '';
+    display: block;
+    clear: left;
+}
+.block1 img {
+	display: inline-block;
+	float: right;
+	width: 152px;
+	height: 118px;
+}
+.block1 p{
+	float: left;
+}
+.gridcontainer {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+.block1 {
+	display: inline-flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+
