@@ -1,7 +1,24 @@
+.pagetitle{
+	text-align: center;
+	vertical-align: super;
+	font-family: MyriadPro-Regular;
+	font-size: 18px;
+	height: 40px;
+	padding-top: 11px;
+	color: #000000;
+}
 .container{
-margin: 40px;
+margin: 0px 40px 40px 40px;
 background: #56836F;
-height: 1396px;}
+border: solid 4px;
+border-color: #006837;
+/**width: 1286px;
+height: 1396px;**/}
+
+header{
+margin-top: 50px;
+margin-bottom: 63px;
+}
 .navli {
 	display: inline-block;
 	margin-right: 55px;
@@ -10,17 +27,90 @@ height: 1396px;}
 	color: #FFFFFF;
 	text-align: left;
 }
+.navul{
+	margin-right: 17px;
+	margin-left: 181px;
+}
+.navli a{
+	color:#FFFFFF;
+}
 nav{
 	display: inline-block;
 }
 .icon{
   display: inline-block;
   vertical-align: top;
-  margin:49px 55px 83px 1fr;
+  margin:49px 55px 83px 0px;
   width: 203px;
   height: 152px;
 }
-.block1::after {
+
+.gridcontainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  direction: row;
+  grid-column-end: 3 span 3;
+  grid-gap: 45px 15px;
+  padding-left: 70px;
+  padding-right: 56px;
+  padding-bottom: 20px;
+     }
+  .block1 {
+  background-color: #FCEE21;
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+}
+.block1 img{
+	float:right;
+	width: 152px;
+	height: 118px;
+	margin: 0px 20px;
+}
+.block2 {
+  background-color: #FCEE21;
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #006837;
+}
+.block2 img{
+	float:left;
+	width: 152px;
+	height: 118px;
+	margin: 0px 20px;
+}
+.block3 {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #FCEE21;
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+}
+.block3 img{
+	width: 152px;
+	height: 118px;
+	margin: 0px 20px;
+}
+.block4 {
+  background-color: #FCEE21;
+  padding: 20px;
+  font-size: 14px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #006837;
+}
+.block4 img{
+	float:left;
+	width: 152px;
+	height: 118px;
+	margin: 0px 20px;
+}
+./**.block1::after {
     content: '';
     display: block;
     clear: left;
@@ -30,22 +120,8 @@ nav{
 	float: right;
 	width: 152px;
 	height: 118px;
+	position: relative;
 }
 .block1 p{
 	float: left;
-}
-.gridcontainer {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: auto auto;
-  padding: 10px;
-}
-.block1 {
-	display: inline-flex;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  padding: 20px;
-  font-size: 14px;
-  text-align: left;
-}
-
+}**/
