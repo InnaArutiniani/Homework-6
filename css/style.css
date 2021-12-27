@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 .pagetitle{
 	text-align: center;
 	vertical-align: super;
@@ -6,14 +13,16 @@
 	height: 40px;
 	padding-top: 11px;
 	color: #000000;
+	width: 1286px;
+	margin-left: 40px;
 }
 .container{
-margin: 0px 40px 40px 40px;
+margin: 0px auto 40px auto;
 background: #56836F;
 border: solid 4px;
 border-color: #006837;
-/**width: 1286px;
-height: 1396px;**/}
+width: 1286px;
+/**height: 1396px;**/}
 
 header{
 margin-top: 50px;
@@ -40,21 +49,52 @@ nav{
 .icon{
   display: inline-block;
   vertical-align: top;
-  margin:49px 55px 83px 0px;
+  margin: 0px 55px 83px 0px;
   width: 203px;
   height: 152px;
 }
 
 .gridcontainer {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr 45px 1fr 45px 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 15px 1fr;
   grid-template-columns: 1fr 1fr;
-  direction: row;
-  grid-column-end: 3 span 3;
   grid-gap: 45px 15px;
   padding-left: 70px;
   padding-right: 56px;
   padding-bottom: 20px;
+     }
+
+.gridcontainer > *:nth-child(1) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+     }
+
+.gridcontainer > *:nth-child(2) {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+     }
+
+.gridcontainer > *:nth-child(3) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+     }
+
+.gridcontainer > *:nth-child(4) {
+	-ms-grid-row: 3;
+	-ms-grid-column: 3;
+     }
+
+.gridcontainer > *:nth-child(5) {
+	-ms-grid-row: 5;
+	-ms-grid-column: 1;
+     }
+
+.gridcontainer > *:nth-child(6) {
+	-ms-grid-row: 5;
+	-ms-grid-column: 3;
      }
   .block1 {
   background-color: #FCEE21;
@@ -84,8 +124,13 @@ nav{
 	margin: 0px 20px;
 }
 .block3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
   background-color: #FCEE21;
   padding: 20px;
   font-size: 14px;
@@ -103,6 +148,9 @@ nav{
   text-align: left;
   text-transform: uppercase;
   color: #006837;
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+
 }
 .block4 img{
 	float:left;
@@ -110,18 +158,3 @@ nav{
 	height: 118px;
 	margin: 0px 20px;
 }
-./**.block1::after {
-    content: '';
-    display: block;
-    clear: left;
-}
-.block1 img {
-	display: inline-block;
-	float: right;
-	width: 152px;
-	height: 118px;
-	position: relative;
-}
-.block1 p{
-	float: left;
-}**/
